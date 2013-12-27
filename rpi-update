@@ -3,10 +3,10 @@
 set -o nounset
 set -o errexit
 
-REPO_URI=${REPO_URI:-"https://github.com/Hexxeh/rpi-firmware"}
+REPO_URI=${REPO_URI:-"https://github.com/wireload/rpi-firmware"}
 
 UPDATE_SELF=${UPDATE_SELF:-1}
-UPDATE_URI="https://github.com/Hexxeh/rpi-update/raw/master/rpi-update"
+UPDATE_URI="https://github.com/wireload/rpi-update/raw/master/rpi-update"
 
 if [[ ${BOOT_PATH:-"unset"} == "unset" && ${ROOT_PATH:-"unset"} != "unset" ]] ||
 [[ ${BOOT_PATH:-"unset"} != "unset" && ${ROOT_PATH:-"unset"} == "unset" ]]; then
@@ -192,7 +192,7 @@ if [[ ${EUID} -ne 0 ]]; then
 	exit 1
 fi
 
-echo " *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS"
+echo " *** Raspberry Pi firmware updater by wireload, enhanced by AndrewS"
 
 if [[ ${UPDATE_SELF} -ne 0 ]]; then
 	update_self

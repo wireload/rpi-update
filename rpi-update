@@ -192,7 +192,7 @@ if [[ ${EUID} -ne 0 ]]; then
 	exit 1
 fi
 
-echo " *** Raspberry Pi firmware updater by wireload, enhanced by AndrewS"
+echo " *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS"
 
 if [[ ${UPDATE_SELF} -ne 0 ]]; then
 	update_self

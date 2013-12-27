@@ -20,7 +20,7 @@ You need git installed to use this too. To install run:
 
 To install the tool, run the following command:
 
-    sudo wget https://raw.github.com/Hexxeh/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
+    sudo wget https://raw.github.com/wireload/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
 
 ## Updating
 

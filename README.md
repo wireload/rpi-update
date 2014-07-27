@@ -2,25 +2,23 @@
 
 An easier way to update the firmware of your Raspberry Pi.
 
-## Installing under Raspbian
+## Installing
+
+### Installing under Raspbian
 
 To install the tool, run the following command:
 
     sudo apt-get install rpi-update
 
-## Installing on other OS
-
-### Preparations
-
-You need git installed to use this too. To install run:
-
-    sudo apt-get install git-core
-
-### Installing
+### Installing under other OSes
 
 To install the tool, run the following command:
 
+<<<<<<< HEAD
     sudo wget https://raw.github.com/wireload/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
+=======
+    sudo curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/wireload/rpi-update/master/rpi-update && sudo chmod +x /usr/bin/rpi-update
+>>>>>>> e05cd7ab730a80e47d39f01bc8d0f8f0297bf509
 
 ## Updating
 
@@ -39,7 +37,7 @@ If you'd like to set a different GPU/ARM memory split, then define `gpu_mem` in
 `/boot/config.txt`.
 
 To upgrade/downgrade to a specific firmware revision, specify its Git hash
-(from the https://github.com/Hexxeh/rpi-firmware repository) as follows:
+(from the https://github.com/wireload/rpi-firmware repository) as follows:
 
     sudo rpi-update fab7796df0cf29f9563b507a59ce5b17d93e0390
 
@@ -61,6 +59,19 @@ You can disable this behavior by:
 
 Will update everything **except** the `kernel.img` files and the kernel modules.
 Use with caution, some firmware updates might depend on a kernel update.
+
+#### `SKIP_BACKUP`
+
+    sudo SKIP_BACKUP=1 rpi-update
+
+Avoids making backup of /boot and /lib/modules on first run.
+
+#### `SKIP_REPODELETE`
+
+    sudo SKIP_REPODELETE=1 rpi-update
+
+By default the downloaded files (/root/.rpi-firmware) are deleted at end of update.
+Use this option to keep the files.
 
 #### `ROOT_PATH` and `BOOT_PATH`
 

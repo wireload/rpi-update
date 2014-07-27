@@ -1,6 +1,9 @@
 # rpi-update
 
-An easier way to update the firmware of your Raspberry Pi.
+**DON'T USE THIS FORK**
+
+Use [this](https://github.com/Hexxeh/rpi-update) original branch instead.
+This fork is merely to lock the firmware for [Screenly](http://screenlyapp.com).
 
 ## Installing
 

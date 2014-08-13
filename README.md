@@ -17,11 +17,7 @@ To install the tool, run the following command:
 
 To install the tool, run the following command:
 
-<<<<<<< HEAD
-    sudo wget https://raw.github.com/wireload/rpi-update/master/rpi-update -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update
-=======
     sudo curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/wireload/rpi-update/master/rpi-update && sudo chmod +x /usr/bin/rpi-update
->>>>>>> e05cd7ab730a80e47d39f01bc8d0f8f0297bf509
 
 ## Updating
 
